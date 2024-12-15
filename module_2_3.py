@@ -1,11 +1,13 @@
-while 1 > 0:
-    number = int(input('Введите число: '))
-    my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
-    number_new = 0
-    if number == 0:
+my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
+my_list_new = 0
+while my_list_new < len(my_list):
+    if my_list[my_list_new] > 0:
+        print(my_list[my_list_new])
+        my_list_new += 1
         continue
-    if number >= 2 > 1:
-        print(number)
+    elif my_list[my_list_new] == 0:
+        my_list_new += 1
     else:
-        print()
         break
+
+
